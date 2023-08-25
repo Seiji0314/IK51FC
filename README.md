@@ -15,16 +15,21 @@
 
 標高：156m+30m(建物の高さ)
 
-## APOGEE ALTA U9000X について
-
+## APOGEE ALTA U9000X について[2]
+：3056 x 3056 array, 
+：12 x12 micron pixels
 
 # 参考文献
 [](https://www.astr.tohoku.ac.jp/~ichikawa/equipment/equipment.html)
 
 [1][天文学専攻の望遠鏡](https://www.astr.tohoku.ac.jp/~ichikawa/equipment/equipment.html) 
 
+[2][High Performance Cooled CCD Camera System ALTA U9000X](http://www.telescope.bg/bg_apogee/pdf/U9000X.pdf)
+
 [][東北大学屋上 51cm 望遠鏡による系外惑星トランジット観測(OTS)報告 I](https://www.astr.tohoku.ac.jp/~mawatari/data/TOT/obs20100626/OTSreport.pdf)
 
 [][2010 ~ 2012 に馬渡他が東北大学物理 A 棟屋上望遠鏡で取得した観測データについて](https://www.astr.tohoku.ac.jp/~mawatari/data/TOT/TO51_Mawatari2010-1012.pdf)
 
-[][【イベント】10月19日（金）　市川 隆先生の観望会　参加者募集](https://www.sci.tohoku.ac.jp/news/20120927-6744.html)
+[][【イベント】10月19日（金）市川 隆先生の観望会 参加者募集](https://www.sci.tohoku.ac.jp/news/20120927-6744.html)
+
+[][観測データ倉庫](https://www.astr.tohoku.ac.jp/~mawatari/data.html)
