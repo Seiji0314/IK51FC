@@ -18,8 +18,9 @@ IK51FC：口径φ51cm フォーク型カセグレン式天体反射望遠鏡
 標高：156m+30m(建物の高さ)
 
 ### APOGEE ALTA U9000X について[3]
-：3056 x 3056 array, 
-：12 x12 micron pixels
+3056 x 3056 array
+
+12 x12 micron pixels
 
 ## 解析に必要な環境
 + [iraf](https://iraf-community.github.io)
