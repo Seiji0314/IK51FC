@@ -3,9 +3,9 @@ import numpy as np
 import astropy.io.fits as fits  #「fits」と呼ばれる形式の画像の処理に用いる
 
 def make_flat(obs_date):
-    f_raw_dir = '/Users/seiji/Desktop/astro/30_astr/obs/' + str(obs_date) +'/'
-    out_dir_dark = '/Users/seiji/Desktop/astro/30_astr/calib/dark/' + str(obs_date)
-    out_dir_flat = '/Users/seiji/Desktop/astro/30_astr/calib/flat/' + str(obs_date)
+    f_raw_dir = '../../obs/' + str(obs_date) +'/'
+    out_dir_dark = '../../calib/dark/' + str(obs_date)
+    out_dir_flat = '../../calib/flat/' + str(obs_date)
 
     flats = glob.glob(f_raw_dir+'flat*.fit')
     bands = ['U', 'B', 'V', 'R', 'I', 'L']

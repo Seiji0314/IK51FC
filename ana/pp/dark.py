@@ -8,7 +8,7 @@ import astropy.io.fits as fits  #「fits」と呼ばれる形式の画像の処�
 #########################
 
 def make_dark(obs_date):
-    d_raw_dir = '/Users/seiji/Desktop/astro/30_astr/obs/' + str(obs_date) +'/'
+    d_raw_dir = '../../obs/' + str(obs_date) +'/'
     darks = glob.glob(d_raw_dir+'dark*.fit')
     
     dark_images = np.empty((0, 3056, 3056))  
@@ -23,7 +23,7 @@ def make_dark(obs_date):
     exp = float(head['EXPTIME'])
     med_dark = np.median(dark_images/exp, axis=0)                              
     #print(med_dark)
-    out_d = '/Users/seiji/Desktop/astro/30_astr/calib/dark/' + str(obs_date)
+    out_d = '../../calib/dark/' + str(obs_date)
     fits.writeto(out_d + '/dark.fit', med_dark, overwrite=True)  
 
 def minus(raw_file, bm_file, dark):

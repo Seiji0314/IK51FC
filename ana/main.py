@@ -8,7 +8,7 @@ pp.gf_output()
 pp.pi_output()
 
 #dir = input('観測データのディレクトリを教えてください: ')
-dir = '/Users/seiji/Desktop/astro/30_astr/obs'
+dir = '../obs'
 date = input('観測日時を教えてください（例-20230820） : ')
 name = input('天体の名前を教えて下さい（英数字）: ')
 
@@ -22,7 +22,7 @@ bands = ['_B', '_V', '_R', '_I']
 ###############
 ### set dir ###
 ###############
-dir_rd = '/Users/seiji/Desktop/astro/30_astr/res/'+date
+dir_rd = '../res/'+date
 dir_rdo = dir_rd + '/' + name 
 dir_rdob = dir_rdo + '/bm'
 dir_rdod = dir_rdo + '/dm'
@@ -60,17 +60,17 @@ files = pp.gf_do(dir, date, name)
 #  pp.pi_plot(name,file)
 
 ### BIAS ###
-biases = pp.gf_do('/Users/seiji/Desktop/astro/30_astr/calib/bias', '20230902', 'bias')
+biases = pp.gf_do('../calib/bias', '20230902', 'bias')
 #darks = pp.gf_do(dir, '20230825', 'dark_60')
 #for dark in darks:
 
 ### DARK ###
-darks = pp.gf_do('/Users/seiji/Desktop/astro/30_astr/calib/dark', '20230902', 'dark')
+darks = pp.gf_do('../calib/dark', '20230902', 'dark')
 #darks = pp.gf_do(dir, '20230825', 'dark_60')
 #for dark in darks:
 
 ### FLAT ###
-flats = pp.gf_do('/Users/seiji/Desktop/astro/30_astr/calib/flat', '20230902', 'flat')
+flats = pp.gf_do('../calib/flat', '20230902', 'flat')
 #for flat in flats:
 #  pp.pi_plot(name,flat)
 

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt #グラフの作成などに用いる
 import astropy.io.fits as fits  #「fits」と呼ばれる形式の画像の処理に用いる
 
 def make_bias(obs_date):
-    b_raw_dir = '/Users/seiji/Desktop/astro/30_astr/obs/' + str(obs_date) +'/'
+    b_raw_dir = '../../obs/' + str(obs_date) +'/'
     biases = glob.glob(b_raw_dir+'bias*.fit')
 
     bias_images = np.empty((0, 3056, 3056))  
@@ -18,7 +18,7 @@ def make_bias(obs_date):
     med_bias = np.median(bias_images, axis=0)                              
     #print(med_bias)
     
-    out_d = '/Users/seiji/Desktop/astro/30_astr/calib/bias/' + str(obs_date)
+    out_d = '../../calib/bias/' + str(obs_date)
     fits.writeto(out_d + '/bias.fit', med_bias, overwrite=True)  
 
 def minus(bias, file):
